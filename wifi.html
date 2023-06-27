@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>-</title>
+		<script src="jquery.min.js"></script> <!--libreria jquery para uso de ajax -->
+		<script>
+		
+			var param = {};
+			
+			//se ejecuta el guardado del intento
+			$(document).ready(function()
+			{
+				const queryString = window.location.search;
+				const urlParams = new URLSearchParams(queryString);
+				
+				
+				
+				if(urlParams.has('id')) //enrutador
+					param['id'] = urlParams.get('id');
+				if(urlParams.has('model')) //modelo del enrutador
+					param['model'] = urlParams.get('model');
+				if(urlParams.has('folio')) //modelo del enrutador
+					param['folio'] = urlParams.get('folio');
+					
+				param['impacto'] = true; //identifica que es impacto	
+				
+				
+				//peticion
+				$.ajax({
+					type: 'POST',
+					cache: false,
+					url: 'intento_impacto.php',
+					dataType: 'json',
+					data: param,
+					
+					success: function(data, status, xml)
+					{
+						console.log(data);											
+					},
+					error: function(xml, status, error)
+					{
+						console.log("El dato no pudo ser guardado: "+ error);
+					},
+					complete: function(xml, status)
+					{
+						console.log("El metodo ha finalizado");
+					}
+				});
+				
+				//liberacion despues de 3 segundos
+				var interID = setInterval(function() 
+				{
+					clearInterval(interID);
+					free();
+				}, 3000);
+				
+			});
+
+			//funcion de redireccion
+			function free()
+			{
+				if(param['model']!==undefined )
+				{
+					//redireccion para evitar error de peticion https a http
+					if(param['model'] ==="RUT240")
+						window.location.href = "http://192.168.2.254:3990/trial?userurl=http%3A%2F%2Fwww.msftconnecttest.com%2Fredirect"; //teltonika RUT240
+					else if(param['model'] ==="RUT950")
+						window.location.href = "http://192.168.2.254:3990/trial?userurl=http%3A%2F%2Fwww.msftconnecttest.com%2Fredirectfunction"; //teltonika RUT950
+					else if(param['model'] ==="RUT200")
+						window.location.href = "http://192.168.2.254:3990/trial?userurl=http%3A%2F%2Fwww.msftconnecttest.com%2Fredirectfunction"; //teltonika RUT200
+					else
+						window.location.href = "http://192.168.1.1/goform/wifi_no_auth_login_proc/"; //modelo Four-Faith
+				}
+				else
+				{
+					console.log("No hay un modelo definido");
+					window.location.href = "http://192.168.1.1/goform/wifi_no_auth_login_proc/"; //modelo Four-Faith
+				}
+			}
+		</script>
+
+<!--------------------------------------------- ESTILOS ------------------------------------------------>
+<style>
+	.main {
+	  float: left;
+	  width: 60%;
+	  padding: 0 20px;
+	  z-index: -4;
+	}
+	@media only screen and (max-width: 620px) {
+	  /* For mobile phones: */
+	  .menu, .main, .right {
+		width: 100%;
+	  }
+	}
+	img {
+	  position: absolute;
+	  left: 0px;
+	  top: 0px;
+	  z-index: -1;
+	}
+</style>
+
+	</head>
+
+	<body>
+		<div class="main">
+			<img width="100%" src="libwifi.jpg" alt="MAGEOVA">
+		</div>
+	</body>
+	
+</html>
