@@ -2,8 +2,8 @@
 <html>
 	<head>
 
-		<!------------------------------------------ CAMPAÑA SANBORNS CON BOTONES --------------------------------------->
-			<title>SABA</title>
+		<!------------------------------------------ TITULO Y DESCIPCION DE PAGINA --------------------------------------->
+			<title>IMUWIFIVIDEO</title>
 			<meta name="description" content="Publicidad y Wifi Gratis">
 			<meta name="keywords" content="wifi, gratis">
 
@@ -17,7 +17,7 @@
     <script src="jquery.min.js"></script>
 
     <script>
-      <!----------------------------------------- código ------------------------------------------------------->	
+      <!----------------------------------------- codigo Antonio ------------------------------------------------------->	
       var folio; //folio de control
       var param = {};
         
@@ -78,23 +78,17 @@
   .imagen {
     width: 100%;
     height: auto;
-    display: inline-flex;
+    display: block;
   }
-
-  .iconos {
-    width: 15%;
-    height: auto;
-    display: inline-flex;
-  }
-
   .main {
 	  float: left;
 	  width: 100%;
-	  z-index: 0;
+	  z-index: -4;
 	}
   /* Estilo para los botones */
-  .botones {
-    width: 70%;
+  .botones { 
+    width: 96%;
+    height: 96%;
     display: flex;
     justify-content: space-between;
     
@@ -117,15 +111,15 @@ background: linear-gradient(to right, black, black);
 }
 
 input{
-background: linear-gradient(to right, #ffffff, #ffffff);
-text-align: center; 
-width: 280px; 
-height: 13px;
-font-size: 13px;
+background: linear-gradient(to right, #D2D2D2, #ffffff); 
+width: 95%; 
+height: 20px;
+font-size: 15px;
 border-radius: 50px;
+text-align: center;
 border-style: solid; 
 border-width: 1px;
-border-color: black; 
+border-color: #21201f; 
 margin-top: 2px;
 padding-left: 2px;
 margin-bottom: 2px; 
@@ -137,19 +131,15 @@ float: center;
 }
 
 h1{
-font-size: 13px;  
+font-size: 15px;  
 text-align: letf; 
-padding-bottom: 3px; 
-color: #ffffff;
+padding-bottom: 5px; 
+color: #000000;
 }
 
 h2{
-font-size: 14px;
-color: white; 
-align-items: center;
-text-align: center;  
-display: relative;
-
+font-size: 15px;
+color: white;   
 }
 
 h3{
@@ -196,26 +186,26 @@ color: #ffffff;
   text-decoration: none;
   display: block;
   justify-content: center;
-  font-size: 8px;
+  font-size: 11px;
   margin: 0px 0px;
   cursor: pointer;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-  margin-left: 70px;
-  margin-right: 70px;
+  margin-left: 78px;
+  margin-right: 78px;
 }
 
 .button {
-  width: 35%;
-  background: linear-gradient(to right, #ED2525, #ED2525);
-  border: 1px solid #F7FAF8;
+  width: 45%;
+  background: linear-gradient(to right, #317ACB,#5E99DD);
+  border: 1px solid #656565;
   color: white;
-  padding: 13px 13px;
+  padding: 8px 8px;
   text-align: center;
   text-decoration: none;
-  display: inline-flex;
-  justify-content: center;
-  font-size: 12px;
-  margin: 10px 2px;
+  display: inline-block;
+  justify-content: center center;
+  font-size: 15px;
+  margin: 2px 3px;
   cursor: pointer;
   border-radius: 25px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
@@ -223,23 +213,22 @@ color: #ffffff;
 }
 
 .button1 {
-  width: 35%;
-  height: 10%;
+  width: 45%;
   background: linear-gradient(to right, #40BB36, #66D25D);
   border: 1px solid #F7FAF8;
   color: white;
-  padding: 5px 5px;
+  padding: 8px 8px;
   text-align: center;
   text-decoration: none;
-  display: inline-flex;
-  justify-content: center;
-  font-size: 20px;
-  margin: 5px 5px;
+  display: inline-block;
+  justify-content: center center;
+  font-size: 15px;
+  margin: 2px 3px;
   cursor: pointer;
-  border-radius: 20px;
+  border-radius: 25px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   position: relative;
-  top: -20px;
-  /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
+  top: 0px;
   
 }
 
@@ -249,23 +238,24 @@ color: #ffffff;
 
 .timer {
   position: absolute;
-  top: 5.3%;
+  top: 5.5%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display:inline-flex;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  height: 350px;
-  font-size: 14px;
+  height: 50px;
+  font-size: 13px;
   font-weight: bold;
-  color: white
+  color: rgb(255, 255, 255);
 }
       
       .clock-icon {
         background-image: url('contador.svg');
         background-size: cover;
-        width: 20px;
-        height: 20px;
-        margin-right: 5px;
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
       }
 
 input::-webkit-input-placeholder { color: black; }
@@ -274,57 +264,113 @@ input::-webkit-input-placeholder { color: black; }
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 3px solid green; 
 }
+.iconos {
+    width: 15%;
+    height: 15%;
+    display: inline-block;
+  }
 </style>
 
 
 
 </head>
 <body>
-  <div>
-  <h2>No cierres esta ventana</h2><br></div>
-  <div id="saba1" style="background-color: black;">
-    <div class="timer"><br>
-    <a>Tiempo&nbsp;&nbsp;</a>
-    <div class="clock-icon"></div>
-    <div id="countdown"></div>  
+
+  <div id="saba1" >
+
+    <center><h2><a>No cierres esta ventana</a></h2><br></center>
+
+  <div class="timer">
+    <a>Tiempo&nbsp;&nbsp;</a><div class="clock-icon"></div>
+    <div id="countdown"></div>
   </div>
 
-    <!-- <div class="main">
-		  <img class="imagen" src="Saba1.jpg" alt="MAGEOVA"> 
+    <div class="main">
+		  <img class="imagen" src="saba_1.jpg" alt="MAGEOVA"> 
 	  </div>
 
     <div class="botones">
-      <button class="my-image button" data-opcion="invisible"><b>Invisible</b></button>
-      <button class="my-image button button2" data-opcion="ultra"><b>Ultra</b></button>
-      <button class="my-image button button3" data-opcion="ultra_larga"><b>Ultra Larga</b></button>
-      <button class="my-image button button4" data-opcion="no_aplica"><b>No Aplica</b></button>
-      </div>  -->
+      <img src="1.png" class="iconos my-image" id="A">
+      <img src="2.png" class="iconos my-image" id="B">
+      <img src="3.png" class="iconos my-image" id="C">
+      <button class="button1 my-image">No aplica</button>
+      </div> 
 
   </div>
 
   
   
   <form id="form1">
-    <div id="saba2" style="display: inline-block;">
+    <div id="saba2" style="display: none;">
       <input type="hidden" name="opc" id="opc">
-      <div><img src="saba_1.jpg" class="imagen"></div>
-      <div id="gracias" style="text-align: center; background-color: black;">
-        <!-- <h1>¿Quieres recibir promociones?<br>
+      <img src="ANUNCIO.jpg" class="imagen">
+      <div id="gracias" style="text-align: center; background-color: white">
+        <h1>¿Quieres recibir promociones?</h1>
         <input id="correo" type="email" name="correo" placeholder="Ingresa aquí tu correo electronico:">
-      </h1>  -->
-      <img src="1.png" class="iconos my-image" id="gin">
-      <img src="2.png" class="iconos my-image" id="ph">
-      <img src="3.png" class="iconos my-image" id="nat">
-      <button class="button1" id="pagina">No aplica</button>
-      <!-- <img class="enviar boton" src="PNG/Recurso 8.png" > -->
+      </div>
+  
+      <div class="botones">
+        <button class="button1" id="liberar">Liberar internet</button>
+        <button class="button" id="pagina">Visitar Sitio</button>
+        <!-- <img class="enviar boton" src="PNG/Recurso 8.png" > -->
       </div>
     </div>
   </form>
 
 
+  
+
+  <!--------------------------------------------- Contador ---------------------------------------------------------->
+<script>
+  // ProgressCountdown(300, "pageBeginCountdownText");
+
+  // function ProgressCountdown(timeleft, text) {
+  //   return new Promise((resolve, reject) => {
+  //     var countdownTimer = setInterval(() => {
+  //       timeleft--;
+
+  //       document.getElementById(text).textContent = timeleft;
+
+  //       if (timeleft <= 0) {
+  //         clearInterval(countdownTimer);
+  //         resolve(true);
+  //       }
+  //     }, 1000);
+  //   });
+  // }
+</script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+<script>
+  // import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
+  // 	import { getFirestore,
+  // collection,
+  // getDocs,
+  // onSnapshot,
+  // addDoc,
+  // deleteDoc,
+  // doc,
+  // getDoc,
+  // updateDoc,} from "https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore.js";
+  console.log('firestore');
+const firebaseConfig = {
+    apiKey: "AIzaSyAL6iqnohcoBn0F-UR1ZBPCvTQybXTkb-M",
+    authDomain: "mageovasaba.firebaseapp.com",
+    projectId: "mageovasaba",
+    storageBucket: "mageovasaba.appspot.com",
+    messagingSenderId: "75177585970",
+    appId: "1:75177585970:web:34be5b37a23f5a5e09fb2b"
+  };
+
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+var db = firebase.firestore();
 
 
+</script>
+<script src="app.js"></script>
 <script>
   
 
@@ -336,7 +382,7 @@ input::-webkit-input-placeholder { color: black; }
     // const enviarBtn = document.querySelector('.enviar');
     const enviarBtn = document.getElementById("liberar");
     var opcion = null;
-    var correo = null;
+    // var correo = null;
     
     // Obtener todas las imágenes con la clase my-image
     const images = document.querySelectorAll('.my-image');
@@ -347,53 +393,82 @@ input::-webkit-input-placeholder { color: black; }
         // Ocultar el div1 y mostrar el div2
         div1.style.display = 'none';
         div2.style.display = 'block';
-
-        opcion = event.target.dataset.opcion;
-
       });
     });
 
+    // enviarBtn.addEventListener('click',(event) => {
+
+    //   // Se crea el formulario a enviar
+    //   var formData = new FormData(document.getElementById('form1'));
+    //   formData.append("opc", opcion);
+
+    //   $.ajax({
+    //     type: "post",
+    //     url: "insertadatos.php",
+    //     data: formData,
+    //     processData: false, //prevents jQuery from converting formData to a string
+    //     contentType: false, //prevents jQuery from setting a content-type header
+    //     success: function(response) {
+    //       alert(`Cargado: ${response}`);
+    //       redirect();
+    //     },
+    //     error: function() {
+    //       alert(`Error de red`);
+    //     }
+    //   });
+
+    // });
 
     $("#liberar").click(()=>{
       // Se crea el formulario a enviar
       var formData = new FormData(document.getElementById('form1'));
       formData.append("opc", opcion);
 
-      $.ajax({
-        type: "post",
-        url: "insertadatos.php",
-        data: formData,
-        processData: false, //prevents jQuery from converting formData to a string
-        contentType: false, //prevents jQuery from setting a content-type header
-        success: function(response) {
-          console.log(`Almacenado en BD: ${response}`);
-          redirect();
-        },
-        error: function(xml, status, error) {
-          console.log(`Error al insertar datos ${error}`);
-        }
-      });
+      console.log('inicio');
+      // addDoc(collection(db, "tasks"), { opcion, correo });
+      console.log('final');
+      // $.ajax({
+      //   type: "post",
+      //   url: "insertadatos.php",
+      //   data: formData,
+      //   processData: false, //prevents jQuery from converting formData to a string
+      //   contentType: false, //prevents jQuery from setting a content-type header
+      //   success: function(response) {
+      //     console.log(`Almacenado en BD: ${response}`);
+      //     redirect();
+      //   },
+      //   error: function(xml, status, error) {
+      //     console.log(`Error al insertar datos ${error}`);
+      //   }
+      // });
+    });
+    $("#A").click(()=>{
+      opcion = "A"
+    });
+    $("#B").click(()=>{
+      opcion = "B"
+    });
+    $("#C").click(()=>{
+      opcion = "C"
+    });
+    $("#pagina").click(()=>{
+      location.replace("https://www.saba.com.mx/comprar-productos/comprar-en-linea/kits-saba/kits-diana-kit-saba-cuidado-diario/?utm_source=qr-code&utm_medium=ooh-lumin&utm_campaign=rutina");
     });
 
-    $("#pagina").click(()=>{
-      location.replace("index_2.html");
-    });
-    $("#gin").click(()=>{
-      location.replace("index_2.html");
-    });
-    $("#ph").click(()=>{
-      location.replace("index_2.html");
-    });
-    $("#nat").click(()=>{
-      location.replace("index_2.html");
-    });
     //funcion de redireccion
 			function redirect()
 			{
-
-				if(folio!==undefined)
+				// if(folio!==undefined && param['id']!==undefined)
+				// {
+				// 	window.location.href = 'wifi.html?id='+param['id']+"&folio="+folio+"&model="+param['model'];
+				// }
+				// else
+				// {
+				// 	console.log("Error, no hay identificador o folio");
+				// }
+        if(folio!==undefined)
 				{
-					window.location.href = 'index_2.html?id='+param['id']+"&folio="+folio+"&model="+param['model']+"&opc="+opcion;
+					window.location.href = 'wifi.html?id='+param['id']+"&folio="+folio+"&model="+param['model'];
 				}
 				else
 				{
@@ -423,8 +498,7 @@ input::-webkit-input-placeholder { color: black; }
     document.getElementById("countdown").innerHTML = seconds + "s ";
     
     // If the count down is finished, write some text 
-    if (distance < 0) 
-	{
+    if (distance < 0) {
       clearInterval(x);
       document.getElementById("countdown").innerHTML = "0";
     }
