@@ -8,7 +8,7 @@ if(isset($_POST['opc'])){
     $correo = isset($_POST['correo'])?$_POST['correo']:"";
 
     $data = '{"Opcion":"'.$opc.'","Correo":"'.$correo.'"}';
-    $url  = "https://tareas-5ad58-default-rtdb.firebaseio.com/saba.json";
+    $url  = "https://mageovasaba-default-rtdb.firebaseio.com/";
     
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $url);
